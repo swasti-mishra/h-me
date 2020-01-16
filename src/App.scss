@@ -1,0 +1,80 @@
+.App {
+  margin: auto;
+  width: 30%;
+  .App-header {
+    font-size: calc(10px + 2vmin);
+    color: #635555;
+    position: absolute;
+    top: 20%;
+    width: 30%;
+    .loginPage{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 3px 5px 9px -2px #888888;
+      border-radius: 4%;
+      .App-logo {
+        height: 80px;
+        pointer-events: none;
+      }
+      .heading{
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .inputText{
+        margin-bottom: 25px;
+        border-width: 1px;
+        border-radius: 5px;
+        height: 23px;
+        width: 75%;
+        border-color: darkgrey;
+        padding: 3px;
+        &.error{
+          border-color: #F04438;
+          margin-bottom: 0px;
+          color: #888888;
+        }
+      }
+      .submitButton{
+        width: 77%;
+        padding: 10px 0;
+        margin-bottom: 32px;
+      }
+      .error{
+        font-size: 12px;
+        color: #F04438;
+        margin-bottom: 20px;
+      }
+    }
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid grey;
+      width: 60%;
+      height: 243px;
+      -webkit-animation: spin 2s linear infinite; /* Safari */
+      animation: spin 2s linear infinite;
+    }
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
